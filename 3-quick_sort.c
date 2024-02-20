@@ -1,4 +1,5 @@
 #include "sort.h"
+<<<<<<< HEAD
 
 void swap_ints(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
@@ -92,4 +93,21 @@ void quick_sort(int *array, size_t size)
 		return;
 
 	lomuto_sort(array, size, 0, size - 1);
+=======
+#include <stdio.h>
+
+
+void quick_sort(int *array, size_t size)
+{
+	int l, h, j;
+	l = 0
+	h = size - 1;
+
+	if (l < h)
+	{
+		j = partition(array, l, h);
+		quick_sort(array, l, j);
+		quick_sort(array, j + 1, h);
+	}
+>>>>>>> 20dad3e (quick sort)
 }
