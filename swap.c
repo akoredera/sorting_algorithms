@@ -2,6 +2,8 @@
 
 /**
  * swap - This function swaps two elements
+ * @x: the first element
+ * @y: the second element
  *
  * Return - void
  */
